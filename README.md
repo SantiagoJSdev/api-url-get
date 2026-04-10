@@ -123,6 +123,8 @@ Asegurate de tener `MONGODB_URI` (y el resto que necesites) en `.env.local` o en
 
 Framework preset: **Other** (no hace falta Next.js). Node 18+.
 
+Si Vercel muestra *“No Output Directory named public”*: el repo incluye `public/index.html` para cumplir ese modo; o en **Settings → General** dejá **Output Directory** vacío y **Build Command** vacío (el `vercel.json` ya deja el build en blanco).
+
 ## Tests manuales
 
 - Con el documento presente en Atlas, el GET debe devolver el mismo `baseUrl` que ves en Compass.
